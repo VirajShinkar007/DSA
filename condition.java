@@ -94,16 +94,40 @@ public class condition {
 
 
         //switch case
+        // public static void main(String[] args) {
+        //     int caseNum =3;
+        //     switch(caseNum){
+        //         case 1: System.out.println("hellow case 1");
+        //         break;
+        //         case 2:System.out.println("hellow case 2");
+        //         break;
+        //         case 3: System.out.println("hellow case 3");
+        //         break;
+        //         default: System.out.println("invalid case");    
+        //     }
+        // }
+
+        //calc
         public static void main(String[] args) {
-            int caseNum =3;
-            switch(caseNum){
-                case 1: System.out.println("hellow case 1");
+            Scanner sc=new Scanner(System.in);
+            System.out.println("enter a");
+            int a =sc.nextInt();
+            System.out.println("enter b7");
+            int b = sc.nextInt();
+           System.out.println("enter operator");
+            char op = sc.next().charAt(0);
+           
+
+            switch(op){
+                case '+':System.out.println(a+b);
                 break;
-                case 2:System.out.println("hellow case 2");
+                case '-':System.out.println(a-b);
                 break;
-                case 3: System.out.println("hellow case 3");
+                case '*':System.out.println(a*b);
                 break;
-                default: System.out.println("invalid case");    
+                case '/':System.out.println(a/b);
+                break;
+                default: System.out.println("invalid operator");
             }
         }
 }
